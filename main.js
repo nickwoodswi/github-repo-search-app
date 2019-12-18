@@ -18,8 +18,8 @@ function populateRepos(responseJson) {
     for (i = 0; i < responseJson.length; i++) {
         let repoName = responseJson[i].name;
         let repoLink = responseJson[i].full_name;
-        $('ul').append(`<li>${repoName} - <a href="http://github.com/${repoLink}">VIEW REPO</a></li>`);
-    }
-}
+        $('.results').append(`<li>${repoName} - <a href="http://github.com/${repoLink}">VIEW REPO</a></li>`);
+    };
+};
 
 getRepos();
